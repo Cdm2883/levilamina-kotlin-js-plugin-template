@@ -45,7 +45,7 @@ external class NativePointer {
 // TODO
 //    fun asEntity(): LLSE_Entity
 //    fun asItem(): LLSE_Item
-//    fun asPlayer(): LLSE_Player
+    fun asPlayer(): LLSE_Player
 //    fun asContainer(): LLSE_Container
 
     companion object {
@@ -65,13 +65,13 @@ external class NativePointer {
         /**
          * 获得符号地址
          * @param symbol 需要查询的符号
-         * @return 查询结果，若查询失败则返回空指针
+         * @return 查询结果. 若查询失败则返回空指针
          */
         fun fromSymbol(symbol: String): NativePointer
 
         /**
          * 获得地址实例
-         * @param address 地址，以16进制字符串或数字表示
+         * @param address 地址. 以16进制字符串或数字表示
          * @return 对应地址的指针实例
          */
         fun fromAddress(address: String): NativePointer

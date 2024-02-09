@@ -2,8 +2,8 @@ external class network {
     companion object {
         /**
          * 发送一个异步HTTP(s) Get请求
-         * @param url 请求的目标地址（包括 Get 请求附带的参数）
-         * @param callback 当请求返回时执行的回调函数，用于回传HTTP(s)响应结果。
+         * @param url 请求的目标地址 (包括 Get 请求附带的参数)
+         * @param callback 当请求返回时执行的回调函数, 用于回传HTTP(s)响应结果
          * @return 是否成功发送请求
          */
         fun httpGet(
@@ -13,9 +13,9 @@ external class network {
 
         /**
          * 发送一个异步HTTP(s) Get请求
-         * @param url 请求的目标地址（包括 Get 请求附带的参数）
-         * @param header 请求头（包括 Get 请求Request header）
-         * @param callback 当请求返回时执行的回调函数，用于回传HTTP(s)响应结果。
+         * @param url 请求的目标地址 (包括 Get 请求附带的参数)
+         * @param header 请求头 (包括 Get 请求Request header)
+         * @param callback 当请求返回时执行的回调函数, 用于回传HTTP(s)响应结果
          * @return 是否成功发送请求
          */
         fun httpGet(
@@ -28,8 +28,8 @@ external class network {
          * 发送一个异步HTTP(s) Post请求
          * @param url 请求的目标地址
          * @param data 发送的数据
-         * @param type 发送的 Post 数据类型，形如 `text/plain` `application/x-www-form-urlencoded` 等
-         * @param callback 当请求返回时执行的回调函数，用于回传HTTP(s)响应结果。
+         * @param type 发送的 Post 数据类型, 形如 `text/plain` `application/x-www-form-urlencoded` 等
+         * @param callback 当请求返回时执行的回调函数, 用于回传HTTP(s)响应结果.
          * @return 是否成功发送请求
          */
         fun httpPost(
@@ -42,10 +42,10 @@ external class network {
         /**
          * 发送一个异步HTTP(s) Post请求
          * @param url 请求的目标地址
-         * @param header 请求头（包括 Post 请求Request header）
+         * @param header 请求头 (包括 Post 请求Request header)
          * @param data 发送的数据
-         * @param type 发送的 Post 数据类型，形如 `text/plain` `application/x-www-form-urlencoded` 等
-         * @param callback 当请求返回时执行的回调函数，用于回传HTTP(s)响应结果。
+         * @param type 发送的 Post 数据类型, 形如 `text/plain` `application/x-www-form-urlencoded` 等
+         * @param callback 当请求返回时执行的回调函数, 用于回传HTTP(s)响应结果
          * @return 是否成功发送请求
          */
         fun httpPost(
@@ -80,7 +80,7 @@ external class WSClient {
     /**
      * 异步创建连接
      * @param target 要连接的目标地址
-     * @param callback 当连接成功或者失败时执行的回调函数。
+     * @param callback 当连接成功或者失败时执行的回调函数
      * @return 是否成功开始尝试连接
      */
     fun connectAsync(target: String, callback: (success: Boolean) -> Unit): Boolean
@@ -108,7 +108,7 @@ external class WSClient {
     fun listen(event: String, callback: Any): Boolean
 
     /**
-     * 关闭连接 (在处于关闭状态时，请勿继续使用此客户端对象！)
+     * 关闭连接 (在处于关闭状态时, 请勿继续使用此客户端对象!)
      * @return 是否成功关闭连接
      */
     fun close(): Boolean
@@ -160,7 +160,7 @@ external class HttpRequest {
     /**
      * 获取指定请求头的值
      * @param name 请求头名称
-     * @return 请求头的值数组(如果没有该请求头，则返回`[]`空数组)
+     * @return 请求头的值数组(如果没有该请求头, 则返回`[]`空数组)
      */
     fun getHeader(name: String): Array<String>
 }
@@ -184,7 +184,7 @@ external class HttpResponse {
     /**
      * 获取指定请求头的值
      * @param name 请求头名称
-     * @return 请求头的值数组(如果没有该请求头，则返回`[]`空数组)
+     * @return 请求头的值数组(如果没有该请求头, 则返回`[]`空数组)
      */
     fun getHeader(name: String): Array<String>
 
@@ -207,9 +207,9 @@ external class HttpResponse {
 external class HttpServer {
     /**
      * 监听 Get 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的GET请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的GET请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onGet(
         path: String,
@@ -218,9 +218,9 @@ external class HttpServer {
 
     /**
      * 监听 Put 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的Put请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的Put请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onPut(
         path: String,
@@ -229,9 +229,9 @@ external class HttpServer {
 
     /**
      * 监听 Post 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的Post请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的Post请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onPost(
         path: String,
@@ -240,9 +240,9 @@ external class HttpServer {
 
     /**
      * 监听 Patch 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的Patch请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的Patch请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onPatch(
         path: String,
@@ -251,9 +251,9 @@ external class HttpServer {
 
     /**
      * 监听 Delete 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的Delete请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的Delete请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onDelete(
         path: String,
@@ -262,9 +262,9 @@ external class HttpServer {
 
     /**
      * 监听 Options 请求
-     * @param path 请求目录，以`/`开头，可以包含正则表达式。如: `/test/(.+)`
-     * @param callback 回调函数，在收到符合path的Options请求回调
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param path 请求目录, 以`/`开头, 可以包含正则表达式. 如: `/test/(.+)`
+     * @param callback 回调函数, 在收到符合path的Options请求回调
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onOptions(
         path: String,
@@ -273,8 +273,8 @@ external class HttpServer {
 
     /**
      * 监听 PreRouting 预路由事件
-     * @param callback 回调函数，在收到请求时调用。在回调函数中可以修改响应，如果返回`false`，则不会继续路由至对应路径的回调函数(但仍然会触发PostRouting事件)。
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param callback 回调函数, 在收到请求时调用. 在回调函数中可以修改响应, 如果返回`false`, 则不会继续路由至对应路径的回调函数 (但仍然会触发PostRouting事件)
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onPreRouting(
         callback: (req: HttpRequest, resp: HttpResponse) -> Unit
@@ -282,8 +282,8 @@ external class HttpServer {
 
     /**
      * 监听 PostRouting 后路由事件
-     * @param callback 回调函数，在对应目录的回调函数(或PreRouting事件)执行完毕后调用，在回调函数中可以修改响应
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param callback 回调函数, 在对应目录的回调函数 (或PreRouting事件)执行完毕后调用, 在回调函数中可以修改响应
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onPostRouting(
         callback: (req: HttpRequest, resp: HttpResponse) -> Unit
@@ -291,33 +291,33 @@ external class HttpServer {
 
     /**
      * 监听 Error 错误事件
-     * @param callback 回调函数，在错误(状态码 >= 400)时调用
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param callback 回调函数, 在错误 (状态码 >= 400)时调用
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onError(callback: (req: HttpRequest, resp: HttpResponse) -> Unit): HttpServer
 
     /**
      * 监听 Exception 异常事件
-     * @param callback 回调函数，在handler中有抛出异常时调用，参数3为异常信息
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @param callback 回调函数, 在handler中有抛出异常时调用. 参数3为异常信息
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun onException(
-        callback: (req: HttpRequest, resp: HttpResponse,error:String) -> Unit
+        callback: (req: HttpRequest, resp: HttpResponse, error:String) -> Unit
     ): HttpServer
 
     /**
      * 监听端口并开启服务器
-     * @param addr 监听地址，可以是IP地址或域名
+     * @param addr 监听地址, 可以是IP地址或域名
      * @param port 监听端口
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun listen(addr: String, port: Number): HttpServer
 
     /**
      * 监听端口并开启服务器
-     * @param addr 监听地址，可以是IP地址或域名
+     * @param addr 监听地址, 可以是IP地址或域名
      * @param port 监听端口
-     * @return 处理完毕的服务器对象（便于连锁进行其他操作）
+     * @return 处理完毕的服务器对象 (便于连锁进行其他操作)
      */
     fun startAt(addr: String, port: Number): HttpServer
 

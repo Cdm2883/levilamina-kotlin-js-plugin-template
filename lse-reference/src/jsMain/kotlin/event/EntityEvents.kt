@@ -5,7 +5,7 @@ external enum class DamageCause {
     /** 其他 #-0x01 */
     None,
 
-    /** 非正常方式 (如脚本直接设置血量为0)，这种方式的伤害不会被盔甲与buff吸收 #0x00 */
+    /** 非正常方式 (如脚本直接设置血量为0), 这种方式的伤害不会被盔甲与buff吸收 #0x00 */
     Override,
 
     /** 接触伤害 (如仙人掌) #0x01 */
@@ -47,7 +47,7 @@ external enum class DamageCause {
     /** 自杀 #0x0d */
     Suicide,
 
-    /** 尖牙对生物造成的伤害、守卫者对生物造成的魔法伤害和药水伤害等 #0x0e */
+    /** 尖牙对生物造成的伤害, 守卫者对生物造成的魔法伤害和药水伤害等 #0x0e */
     Magic,
 
     /** 凋零效果 #0x0f */
@@ -83,7 +83,7 @@ external enum class DamageCause {
     /** 充能 (?) #0x19 */
     Charging,
 
-    /** 温度  (雪人?) #0x1a */
+    /** 温度 (雪人?) #0x1a */
     Temperature,
 
     /** 冰冻 #0x1b */

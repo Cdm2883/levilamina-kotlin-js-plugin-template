@@ -3,21 +3,21 @@ external class logger {
         /**
          * 设置日志是否输出到控制台
          * @param isOpen 设置日志是否输出到控制台
-         * @param logLevel (可选参数) 控制台的日志输出等级，默认为`4`
+         * @param logLevel 控制台的日志输出等级, 默认为`4`
          */
         fun setConsole(isOpen: Boolean, logLevel: Int = definedExternally): Unit
 
         /**
          * 设置日志是否输出到文件
          * @param filePath 设置日志输出到的文件路径
-         * @param logLevel (可选参数) 文件的最小日志输出等级，默认为`4`
+         * @param logLevel 文件的最小日志输出等级, 默认为`4`
          */
         fun setFile(filePath: String, logLevel: Int = definedExternally): Unit
 
         /**
          * 设置日志是否输出到某个玩家
          * @param player 设置日志输出到的目标玩家对象. 如果传入Null, 则代表关闭到玩家的输出.
-         * @param logLevel (可选参数) 玩家的最小日志输出等级, 默认为`4`
+         * @param logLevel 玩家的最小日志输出等级, 默认为`4`
          */
         fun setPlayer(player: Player?, logLevel: Int = definedExternally): Unit
 

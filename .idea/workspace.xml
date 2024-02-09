@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="Initial commit" />
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/SimpleForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +92,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
     "ts.external.directory.path": "D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -98,7 +111,7 @@
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [clean]">
+  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [build]">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -343,11 +356,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [buildLseJs]" />
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [jsRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +381,8 @@
       <workItem from="1707453449167" duration="1539000" />
       <workItem from="1707460262352" duration="8205000" />
       <workItem from="1707468623411" duration="1899000" />
-      <workItem from="1707471258540" duration="686000" />
+      <workItem from="1707471258540" duration="2447000" />
+      <workItem from="1707480423661" duration="10995000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

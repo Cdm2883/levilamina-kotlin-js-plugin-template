@@ -2,7 +2,7 @@ open external class file
 /**
  * @param path 想要打开的文件路径
  * @param mode 文件的打开模式
- * @param isBinary （可选参数）是否以二进制模式打开文件，默认为`false`
+ * @param isBinary 是否以二进制模式打开文件, 默认为`false`
  */(path: String, mode: Number, isBinary: Boolean = definedExternally) {
 
     /** 当前文件路径 */
@@ -50,7 +50,7 @@ open external class file
     fun writeLineSync(str: String): Boolean
 
     /**
-     * 从文件读取文本（异步）
+     * 从文件读取文本 (异步)
      * @param cnt 要读取的字符数
      * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
@@ -60,7 +60,7 @@ open external class file
         callback: (result: String?) -> Unit
     ): Boolean
     /**
-     * 从文件读取二进制数据（异步）
+     * 从文件读取二进制数据 (异步)
      * @param cnt 要读取的字节数
      * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
@@ -71,14 +71,14 @@ open external class file
     ): Boolean
 
     /**
-     * 从文件读取一行文本（异步）
+     * 从文件读取一行文本 (异步)
      * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
      */
     fun readLine(callback: (result: String) -> Unit): Boolean
 
     /**
-     * 从文件读取所有内容（异步）
+     * 从文件读取所有内容 (异步)
      * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
      */
@@ -87,9 +87,9 @@ open external class file
     fun readAll(callback: (result: ByteBuffer?) -> Unit): Boolean
 
     /**
-     * 写入文本到文件（异步）
+     * 写入文本到文件 (异步)
      * @param str 要写入的内容
-     * @param callback （可选参数）获取结果的回调函数
+     * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
      */
     fun write(
@@ -97,9 +97,9 @@ open external class file
         callback: (result: Boolean) -> Unit = definedExternally
     ): Boolean
     /**
-     * 写入二进制数据到文件（异步）
+     * 写入二进制数据到文件 (异步)
      * @param str 要写入的内容
-     * @param callback （可选参数）获取结果的回调函数
+     * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
      */
     fun write(
@@ -108,9 +108,9 @@ open external class file
     ): Boolean
 
     /**
-     * 写入一行文本到文件（异步）
+     * 写入一行文本到文件 (异步)
      * @param str 要写入的内容
-     * @param callback （可选参数）获取结果的回调函数
+     * @param callback 获取结果的回调函数
      * @return 是否成功发送请求
      */
     fun writeLine(
@@ -132,14 +132,14 @@ open external class file
     fun seekTo(pos: Number, isRelative: Boolean): Boolean
 
     /**
-     * 设定文件大小 (设定的新大小可以大于文件的当前大小。如果设定的新大小小于文件的当前大小，原文件将被截断。)
+     * 设定文件大小 (设定的新大小可以大于文件的当前大小. 如果设定的新大小小于文件的当前大小, 原文件将被截断)
      * @param size 要设定的目标大小
      * @return 是否设定成功
      */
     fun setSize(size: Number): Boolean
 
     /**
-     * 关闭文件 (文件关闭后，严禁再次使用)
+     * 关闭文件 (文件关闭后, 严禁再次使用)
      * @return 是否成功关闭
      */
     fun close(): Boolean
@@ -180,14 +180,14 @@ open external class file
 
         /**
          * 读入文件的所有内容
-         * @param path 目标文件的路径，相对路径以BDS根目录为基准
+         * @param path 目标文件的路径. 相对路径以BDS根目录为基准
          * @return 文件的所有数据
          */
         fun readFrom(path: String): String?
 
         /**
          * 向指定文件写入内容
-         * @param path 目标文件的路径，相对路径以BDS根目录为基准
+         * @param path 目标文件的路径. 相对路径以BDS根目录为基准
          * @param text 要写入的内容
          * @return 是否写入成功
          */
@@ -195,7 +195,7 @@ open external class file
 
         /**
          * 向指定文件追加一行
-         * @param path 目标文件的路径，相对路径以BDS根目录为基准
+         * @param path 目标文件的路. 相对路径以BDS根目录为基准
          * @param text 要写入的内容
          * @return 是否写入成功
          */
@@ -254,9 +254,9 @@ open external class file
         fun rename(from: String, to: String): Boolean
 
         /**
-         * 获取指定文件的大小 (如果传入的路径位置是一个文件夹，则返回`-1`)
+         * 获取指定文件的大小 (如果传入的路径位置是一个文件夹, 则返回`-1`)
          * @param path 所操作的文件路径
-         * @return 文件的大小（字节）
+         * @return 文件的大小 (字节)
          */
         fun getFileSize(path: String): Int
 

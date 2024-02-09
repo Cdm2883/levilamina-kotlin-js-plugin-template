@@ -9,7 +9,7 @@ external class NbtByte(data: Byte = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -35,7 +35,7 @@ external class NbtShort(data: Short = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -61,7 +61,7 @@ external class NbtInt(data: Int = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -87,7 +87,7 @@ external class NbtLong(data: Long = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -113,7 +113,7 @@ external class NbtFloat(data: Float = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -139,7 +139,7 @@ external class NbtDouble(data: Double = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -165,7 +165,7 @@ external class NbtString(data: String = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 
@@ -191,7 +191,7 @@ external class NbtByteArray(data: ByteArray = definedExternally) {
 
     /**
      * 将NBT对象转换为Json字符串
-     * @param space 如果要格式化输出的字符串，则传入此参数
+     * @param space 如果要格式化输出的字符串, 则传入此参数
      */
     fun toString(space: Int = definedExternally): String
 

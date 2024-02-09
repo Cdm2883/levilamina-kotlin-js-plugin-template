@@ -26,7 +26,7 @@ external fun fastLog(vararg data: Any): Unit
 /**
  * 推迟一段时间执行代码
  * @param func 待执行的函数
- * @param msec 推迟执行的时间（毫秒）
+ * @param msec 推迟执行的时间 (毫秒)
  * @return 此任务ID
  */
 external fun setTimeout(
@@ -36,7 +36,7 @@ external fun setTimeout(
 /**
  * 推迟一段时间执行代码
  * @param func 待执行的代码段
- * @param msec 推迟执行的时间（毫秒）
+ * @param msec 推迟执行的时间 (毫秒)
  * @return 此任务ID
  */
 external fun setTimeout(
@@ -47,7 +47,7 @@ external fun setTimeout(
 /**
  * 设置周期执行代码
  * @param func 待执行的函数
- * @param msec 执行间隔周期（毫秒）
+ * @param msec 执行间隔周期 (毫秒)
  * @return 此任务ID
  */
 external fun setInterval(
@@ -57,7 +57,7 @@ external fun setInterval(
 /**
  * 设置周期执行代码
  * @param func 待执行的代码段
- * @param msec 执行间隔周期（毫秒）
+ * @param msec 执行间隔周期 (毫秒)
  * @return 此任务ID
  */
 external fun setInterval(

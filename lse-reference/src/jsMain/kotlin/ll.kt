@@ -6,7 +6,7 @@ external class ll {
          * @param name 插件名字
          * @param introduction 对插件的简短介绍
          * @param version [Number, Number, Number, Version?] 插件的版本信息[2,0,1]
-         * @param otherInformation Record<String, String> 其他你愿意提供的的附加信息（如许可证、开源地址等）
+         * @param otherInformation Record<String, String> 其他你愿意提供的的附加信息 (如许可证, 开源地址等)
          */
         fun registerPlugin(
             name: String,
@@ -17,13 +17,13 @@ external class ll {
         // endregion
 
         // region script/Li.kt
-        /** LiteLoaderBDS 使用的语言。(例如 `zh_Hans`、`en` 和 `ru_RU`) */
+        /** LiteLoaderBDS 使用的语言. (例如 `zh_Hans`, `en` 和 `ru_RU`) */
         val language: String
-        /** 主版本号（如 **2**.1.0 里的 **2**）*/
+        /** 主版本号 (如 **2**.1.0 里的 **2**)*/
         val major: Number
-        /** 次版本号（如 2.**1**.0 里的 **1**）*/
+        /** 次版本号 (如 2.**1**.0 里的 **1**)*/
         val minor: Number
-        /** 修订版本号（如 2.1.**0** 里的 **0**） */
+        /** 修订版本号 (如 2.1.**0** 里的 **0**) */
         val revision: Number
         /** 版本状态 (`0` 为 `Dev`, `1` 为 `Beta`, `2` 为 `Release`) */
         val status: Number
@@ -71,8 +71,8 @@ external class ll {
         /**
          * 导出函数
          * @param func 要导出的函数
-         * @param namespace 函数的命名空间名，只是方便用于区分不同插件导出的API
-         * @param name 函数的导出名称。其他插件根据导出名称来调用这个函数
+         * @param namespace 函数的命名空间名, 只是方便用于区分不同插件导出的API
+         * @param name 函数的导出名称. 其他插件根据导出名称来调用这个函数
          * @return 是否成功导出
          */
         fun exports(
@@ -83,7 +83,7 @@ external class ll {
         /**
          * 导出函数
          * @param func 要导出的函数
-         * @param name 函数的导出名称。其他插件根据导出名称来调用这个函数
+         * @param name 函数的导出名称. 其他插件根据导出名称来调用这个函数
          * @return 是否成功导出
          */
         fun exports(func: Any, name: String): Boolean
@@ -120,8 +120,8 @@ external class ll {
 
         /**
          * 设置插件依赖库
-         * @param path 依赖库文件名（如 `addplugin.js`)
-         * @param remotePath （可选参数）查找并装载依赖库的路径，说明见文档
+         * @param path 依赖库文件名 (如 `addplugin.js`)
+         * @param remotePath 查找并装载依赖库的路径, 说明见文档
          * @return 是否加载依赖库成功
          */
         fun require(path: String, remotePath: String = definedExternally): Boolean
