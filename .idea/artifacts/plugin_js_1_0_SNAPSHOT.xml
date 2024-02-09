@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="plugin-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/plugin/build/libs</output-path>
+    <root id="archive" name="plugin-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="levilamina-kotlin-js-plugin-template.plugin.jsMain" />
+    </root>
+  </artifact>
+</component>

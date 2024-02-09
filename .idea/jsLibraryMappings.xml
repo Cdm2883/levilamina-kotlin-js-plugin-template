@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="levilamina-kotlin-js-plugin-template/build/js/node_modules" />
+    <excludedPredefinedLibrary name="levilamina-kotlin-js-plugin-template/build/js/packages/levilamina-kotlin-js-plugin-template-lse-reference-test/node_modules" />
+    <excludedPredefinedLibrary name="levilamina-kotlin-js-plugin-template/build/js/packages/levilamina-kotlin-js-plugin-template-lse-reference/node_modules" />
+    <excludedPredefinedLibrary name="levilamina-kotlin-js-plugin-template/build/js/packages/levilamina-kotlin-js-plugin-template-plugin-test/node_modules" />
+    <excludedPredefinedLibrary name="levilamina-kotlin-js-plugin-template/build/js/packages/levilamina-kotlin-js-plugin-template-plugin/node_modules" />
+  </component>
+</project>

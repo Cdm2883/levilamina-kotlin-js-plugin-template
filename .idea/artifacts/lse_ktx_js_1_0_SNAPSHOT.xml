@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lse-ktx-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/lse-ktx/build/libs</output-path>
+    <root id="archive" name="lse-ktx-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="levilamina-kotlin-js-plugin-template.lse-ktx.jsMain" />
+    </root>
+  </artifact>
+</component>
