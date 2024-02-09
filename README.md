@@ -29,7 +29,7 @@
 
 ...
 
-## 🪵 问答
+## 🤔 问答
 ### Q: 是否支持`适用于 LiteLoaderBDSv2 的 LLSE`?
 A: `lse-reference`的接口定义是按照[`适用于 Levilamina 的 LSE`](https://github.com/LiteLDev/LegacyScriptEngine)编写的, 其中大部分接口都有向下兼容.\
 若遇到无法使用的情况 *(例如NativeAPI的部分接口)*, 可自行定义接口或使用 Kotlin/JS 内置的`fun js(code: String): dynamic`执行**常量**代码.

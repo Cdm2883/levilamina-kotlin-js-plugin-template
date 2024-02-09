@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="Initial commit">
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)">
       <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/SimpleForm.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Basic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Basic.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/ll.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/ll.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativeFunction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativeFunction.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Li.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Li.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Logger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/ScriptHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/ScriptHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/i18n.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/i18n.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/File.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/File.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/Network.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/Network.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/SystemCall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/SystemCall.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -382,7 +392,7 @@
       <workItem from="1707460262352" duration="8205000" />
       <workItem from="1707468623411" duration="1899000" />
       <workItem from="1707471258540" duration="2447000" />
-      <workItem from="1707480423661" duration="10995000" />
+      <workItem from="1707480423661" duration="12159000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -392,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707471042440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)">
+      <option name="closed" value="true" />
+      <created>1707499444087</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707499444087</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +431,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)" />
   </component>
 </project>
