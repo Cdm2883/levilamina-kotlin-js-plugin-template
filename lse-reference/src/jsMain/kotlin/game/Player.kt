@@ -9,7 +9,7 @@
 open external class LLSE_Player(nullptr: Nothing) {
     fun asPointer(): NativePointer
 
-    // region 玩家对象 - 属性
+    // region 属性 https://lse.liteldev.com/zh/apis/GameAPI/Player/#-
     /** 玩家名 */ val name: String
     /** 玩家所在坐标 */ val pos: FloatPos
     /** 玩家腿部所在坐标 */ val feetPos: FloatPos
@@ -67,7 +67,7 @@ open external class LLSE_Player(nullptr: Nothing) {
     /** 玩家是否正在潜行 */ val isSneaking: Boolean
     // endregion
 
-    // region 玩家对象 - 函数
+    // region 函数 https://lse.liteldev.com/zh/apis/GameAPI/Player/#-_1
     /**
      * 判断玩家是否为OP
      * @return 玩家是否为OP
@@ -78,9 +78,39 @@ open external class LLSE_Player(nullptr: Nothing) {
     // .instanceFunction("setGameMode", &PlayerClass::setGameMode)
 
     // -
-    // .instanceFunction("runcmd", &PlayerClass::runcmd)
-    // .instanceFunction("teleport", &PlayerClass::teleport)
-    // .instanceFunction("kill", &PlayerClass::kill)
+    /**
+     * 以某个玩家身份执行一条命令
+     * (是以某个玩家**身份**哦! 本来没权限执行的命令也无法执行)
+     * @param cmd 待执行的命令
+     * @return 是否执行成功
+     */
+    fun runcmd(cmd: String): Boolean
+
+    /**
+     * 传送玩家至指定位置
+     * @param pos 目标位置坐标
+     * @param rot 传送后玩家的朝向, 若缺省则与传送前朝向相同
+     * @return 是否成功传送
+     */
+    fun teleport(pos: IntPos, rot: DirectionAngle = definedExternally): Boolean
+    /** @see teleport */
+    fun teleport(pos: FloatPos, rot: DirectionAngle = definedExternally): Boolean
+    /**
+     * 传送玩家至指定位置
+     * @param x 目标 x 坐标
+     * @param y 目标 y 坐标
+     * @param z 目标 z 坐标
+     * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
+     */
+    fun teleport(x: Int, y: Int, z: Int, dimid: Int, rot: DirectionAngle = definedExternally): Boolean
+    /** @see teleport */
+    fun teleport(x: Float, y: Float, z: Float, dimid: Int, rot: DirectionAngle = definedExternally): Boolean
+
+    /**
+     * 杀死玩家
+     * @return 是否成功执行
+     */
+    fun kill(): Boolean
 
     /**
      * 断开玩家连接
@@ -100,7 +130,20 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun tell(msg: String, type: Int = definedExternally): Boolean
 
-    // .instanceFunction("talkAs", &PlayerClass::talkAs)
+    /**
+     * 以某个玩家身份说话
+     * @param text 模拟说话内容
+     * @return 是否执行成功
+     */
+    fun talkAs(text: String): Boolean
+    /**
+     * 以某个玩家身份向某玩家说话
+     * @param target 模拟说话对象
+     * @param text 模拟说话内容
+     * @return 是否执行成功
+     */
+    fun talkAs(target: Player, text: String): Boolean
+    // 我服了爸爸, 这lse在线文档的这两个talkAS的定义怎么是分开的
 
     /** @see tell */
     fun sendText(msg: String, type: Int = definedExternally): Boolean
@@ -133,25 +176,130 @@ open external class LLSE_Player(nullptr: Nothing) {
         stayTime: Int = definedExternally,
         fadeOutTime: Int = definedExternally
     ): Boolean
-    // .instanceFunction("rename", &PlayerClass::rename)
-    // .instanceFunction("setFire", &PlayerClass::setFire)
-    // .instanceFunction("stopFire", &PlayerClass::stopFire)
+
+    /**
+     * 重命名玩家
+     * @param newname 玩家的新名字
+     * @return 是否重命名成功
+     */
+    fun rename(newname: String): Boolean
+
+    /**
+     * 使指定玩家着火
+     * @param time 着火时长, 单位秒
+     * @param isEffect 会不会有火的效果
+     * @return 是否成功着火
+     */
+    fun setFire(time: Int, isEffect: Boolean): Boolean
+
+    /**
+     * 熄灭玩家
+     * @return 是否已被熄灭
+     */
+    fun stopFire(): Boolean
+
     // .instanceFunction("transServer", &PlayerClass::transServer)
     // .instanceFunction("crash", &PlayerClass::crash)
-    // .instanceFunction("hurt", &PlayerClass::hurt)
-    // .instanceFunction("heal", &PlayerClass::heal)
-    // .instanceFunction("setHealth", &PlayerClass::setHealth)
-    // .instanceFunction("setMaxHealth", &PlayerClass::setMaxHealth)
-    // .instanceFunction("setAbsorption", &PlayerClass::setAbsorption)
-    // .instanceFunction("setAttackDamage", &PlayerClass::setAttackDamage)
-    // .instanceFunction("setMaxAttackDamage", &PlayerClass::setMaxAttackDamage)
-    // .instanceFunction("setFollowRange", &PlayerClass::setFollowRange)
-    // .instanceFunction("setKnockbackResistance", &PlayerClass::setKnockbackResistance)
-    // .instanceFunction("setLuck", &PlayerClass::setLuck)
-    // .instanceFunction("setMovementSpeed", &PlayerClass::setMovementSpeed)
-    // .instanceFunction("setUnderwaterMovementSpeed", &PlayerClass::setUnderwaterMovementSpeed)
-    // .instanceFunction("setLavaMovementSpeed", &PlayerClass::setLavaMovementSpeed)
-    // .instanceFunction("setHungry", &PlayerClass::setHungry)
+
+    /**
+     * 对玩家造成伤害
+     * @param damage 对玩家造成的伤害数值
+     * @return 是否造成伤害
+     */
+    fun hurt(damage: Int): Boolean
+
+    /**
+     * 治疗玩家
+     * @param health 治疗的心数
+     * @return 治疗是否成功
+     */
+    fun heal(health: Int): Boolean
+
+    /**
+     * 设置玩家的生命值
+     * @param health 生命值数
+     * @return 是否成功
+     */
+    fun setHealth(health : Int): Boolean
+
+    /**
+     * 设置玩家最大生命值
+     * @param health 生命值数
+     * @return 是否成功
+     */
+    fun setMaxHealth(health: Int): Boolean
+    // 这个函数也是, 而且这lse在线文档的这两个的定义分开得更远
+
+    /**
+     * 为玩家设置伤害吸收属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setAbsorption(value: Int): Boolean
+
+    /**
+     * 为玩家设置攻击伤害属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setAttackDamage(value: Int): Boolean
+
+    /**
+     * 为玩家设置最大攻击伤害属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setMaxAttackDamage(value: Int): Boolean
+
+    /**
+     * 为玩家设置跟随范围
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setFollowRange(value: Int): Boolean
+
+    /**
+     * 为玩家设置击退抵抗属性
+     * @param value 新的值 (0 or 1)
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setKnockbackResistance(value: Int): Boolean
+
+    /**
+     * 为玩家设置幸运属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setLuck(value: Int): Boolean
+
+    /**
+     * 为玩家设置移动速度属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setMovementSpeed(value: Int): Boolean
+
+    /**
+     * 为玩家设置水下移动速度属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setUnderwaterMovementSpeed(value: Int): Boolean
+
+    /**
+     * 为玩家设置岩浆上移动速度属性
+     * @param value 新的值
+     * @return 为玩家设置属性值是否成功
+     */
+    fun setLavaMovementSpeed(value: Int): Boolean
+
+    /**
+     * 设置玩家饥饿值
+     * @param hunger 饥饿值数
+     * @return 是否成功
+     */
+    fun setHungry(hunger: Int): Boolean
+
     // .instanceFunction("refreshChunks", &PlayerClass::refreshChunks)
     // .instanceFunction("giveItem", &PlayerClass::giveItem)
     // .instanceFunction("clearItem", &PlayerClass::clearItem)
@@ -166,17 +314,78 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun sendToast(title: String, message: String): Boolean
 
-    // .instanceFunction("distanceTo", &PlayerClass::distanceTo)
-    // .instanceFunction("distanceToSqr", &PlayerClass::distanceToSqr)
+    // player->distanceTo
+    /**
+     * 获取玩家到坐标的距离
+     * @param pos 目标位置
+     * @return 到坐标的距离 (方块)
+     */
+    fun distanceTo(pos: Entity): Number
+    /** @see distanceTo */
+    fun distanceTo(pos: Player): Number
+    /** @see distanceTo */
+    fun distanceTo(pos: IntPos): Number
+    /** @see distanceTo */
+    fun distanceTo(pos: FloatPos): Number
+    // player->distanceToSqr
+    /** @see distanceTo */
+    fun distanceToSqr(pos: Entity): Number
+    /** @see distanceToSqr */
+    fun distanceToSqr(pos: Player): Number
+    /** @see distanceToSqr */
+    fun distanceToSqr(pos: IntPos): Number
+    /** @see distanceToSqr */
+    fun distanceToSqr(pos: FloatPos): Number
 
     // -
-    // .instanceFunction("getBlockStandingOn", &PlayerClass::getBlockStandingOn)
-    // .instanceFunction("getDevice", &PlayerClass::getDevice)
-    // .instanceFunction("getHand", &PlayerClass::getHand)
-    // .instanceFunction("getOffHand", &PlayerClass::getOffHand)
-    // .instanceFunction("getInventory", &PlayerClass::getInventory)
-    // .instanceFunction("getArmor", &PlayerClass::getArmor)
-    // .instanceFunction("getEnderChest", &PlayerClass::getEnderChest)
+    /**
+     * 获取玩家当前站立所在的方块
+     * @return 当前站立在的方块对象
+     */
+    fun getBlockStandingOn(): Block
+
+    /**
+     * 获取玩家对应的设备信息对象
+     * @return 玩家对应的设备信息对象
+     */
+    fun getDevice(): Device
+
+    /**
+     * 获取玩家主手中的物品对象
+     *
+     * 此处获取的物品对象为引用.
+     * 也就是说, 修改此处返回的物品对象, 或使用其API, 就相当于直接操作玩家主手中对应的物品
+     * @return 玩家主手中的物品对象
+     */
+    fun getHand(): Item
+
+    /**
+     * 获取玩家副手的物品对象
+     *
+     * 此处获取的物品对象为引用.
+     * 也就是说, 修改此处返回的物品对象, 或使用其API, 就相当于直接操作玩家主手中对应的物品
+     * @return 玩家副手中的物品对象
+     */
+    fun getOffHand(): Item
+
+    /**
+     * 获取玩家物品栏的容器对象
+     * @return 玩家物品栏对应的容器对象
+     */
+    fun getInventory(): Container
+
+    /**
+     * 获取玩家盔甲栏的容器对象
+     * @return 玩家盔甲栏对应的容器对象
+     */
+    fun getArmor(): Container
+
+    /**
+     * 获取玩家末影箱的容器对象
+     * @return 玩家末影箱对应的容器对象
+     */
+    fun getEnderChest(): Container
+
     // .instanceFunction("getRespawnPosition", &PlayerClass::getRespawnPosition)
     // .instanceFunction("setRespawnPosition", &PlayerClass::setRespawnPosition)
     // .instanceFunction("refreshItems", &PlayerClass::refreshItems)
@@ -195,7 +404,14 @@ open external class LLSE_Player(nullptr: Nothing) {
     // .instanceFunction("reduceLevel", &PlayerClass::reduceLevel)
     // .instanceFunction("getLevel", &PlayerClass::getLevel)
     // .instanceFunction("setLevel", &PlayerClass::setLevel)
-    // .instanceFunction("setScale", &PlayerClass::setScale)
+
+    /**
+     * 缩放玩家
+     * @param scale 新的玩家体积
+     * @return 玩家是否成功地被缩放
+     */
+    fun setScale(scale: Int): Boolean
+
     // .instanceFunction("resetLevel", &PlayerClass::resetLevel)
     // .instanceFunction("addExperience", &PlayerClass::addExperience)
     // .instanceFunction("reduceExperience", &PlayerClass::reduceExperience)
@@ -247,7 +463,7 @@ open external class LLSE_Player(nullptr: Nothing) {
     // .instanceFunction("getMoneyHistory", &PlayerClass::getMoneyHistory)
     // endregion
 
-    // region 模拟玩家
+    // region 模拟玩家 https://lse.liteldev.com/zh/apis/GameAPI/Player/#api_2
     // .instanceFunction("isSimulatedPlayer", &PlayerClass::isSimulatedPlayer)
     // .instanceFunction("simulateSneak", &PlayerClass::simulateSneak)
     // .instanceFunction("simulateAttack", &PlayerClass::simulateAttack)
@@ -280,5 +496,6 @@ open external class LLSE_Player(nullptr: Nothing) {
     // .instanceFunction("getAllItems", &PlayerClass::getAllItems)
     // .instanceFunction("removeScore", &PlayerClass::deleteScore)
     // .instanceFunction("distanceToPos", &PlayerClass::distanceTo)
+    // endregion
 }
 typealias Player = LLSE_Player

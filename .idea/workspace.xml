@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="修正&amp;增加部分定义">
-      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Packet.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/GlobalPointer.kt" afterDir="false" />
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="增加GlobalPointer和Packet的定义">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +114,7 @@
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [build]">
+  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [clean]">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -361,8 +359,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [clean]" />
+        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [buildLseJs]" />
@@ -389,7 +387,7 @@
       <workItem from="1707471258540" duration="2447000" />
       <workItem from="1707480423661" duration="12159000" />
       <workItem from="1707530958274" duration="3135000" />
-      <workItem from="1707542509685" duration="4404000" />
+      <workItem from="1707542509685" duration="6931000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -415,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707534136262</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加GlobalPointer和Packet的定义">
+      <option name="closed" value="true" />
+      <created>1707549771391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707549771391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,6 +444,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)" />
     <MESSAGE value="修正&amp;增加部分定义" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正&amp;增加部分定义" />
+    <MESSAGE value="增加GlobalPointer和Packet的定义" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加GlobalPointer和Packet的定义" />
   </component>
 </project>
