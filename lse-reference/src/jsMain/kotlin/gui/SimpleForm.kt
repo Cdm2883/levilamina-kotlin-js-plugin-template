@@ -2,7 +2,7 @@
  * 普通表单构建器
  * @see <a href="https://lse.liteldev.com/zh/apis/GuiAPI/FormBuilder/">📃 普通表单构建器 API</a>
  */
-open external class LLSE_SimpleForm {
+open external class LLSE_SimpleForm(nullptr: Nothing) {
     /**
      * 设置表单的标题
      * @param title 表单的标题

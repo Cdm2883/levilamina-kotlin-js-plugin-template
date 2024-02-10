@@ -6,7 +6,7 @@
  * 在脚本引擎中, 使用"玩家对象"来操作和获取某一个玩家的相关信息.
  * @see <a href="https://lse.liteldev.com/zh/apis/GameAPI/Player/">🏃‍♂️ 玩家对象 API</a>
  */
-open external class LLSE_Player {
+open external class LLSE_Player(nullptr: Nothing) {
     fun asPointer(): NativePointer
 
     // region 玩家对象 - 属性

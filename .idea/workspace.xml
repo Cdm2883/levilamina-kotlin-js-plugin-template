@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="修正&amp;增加部分定义, 优化文档&amp;更改文档所有中文标点为英文标点 (应该吧)">
-      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/SimpleForm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Device.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/GameUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/Other.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/event/EntityEvents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Basic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Basic.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/ll.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/ll.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativeFunction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativeFunction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/SimpleForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/SimpleForm.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/native/NativePointer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtCompound.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/nbt/NbtValue.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Li.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Li.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/Logger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/ScriptHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/ScriptHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/i18n.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/script/i18n.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/File.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/File.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/Network.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/Network.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/SystemCall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/system/SystemCall.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +56,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Cdm2883"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c21ccd26-0a43-4c1b-9fde-34dd318f8ab4" />
+        <option name="url" value="https://github.com/Cdm2883/levilamina-kotlin-js-plugin-template.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,30 +84,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false",
-    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template" />
@@ -393,6 +393,7 @@
       <workItem from="1707468623411" duration="1899000" />
       <workItem from="1707471258540" duration="2447000" />
       <workItem from="1707480423661" duration="12159000" />
+      <workItem from="1707530958274" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

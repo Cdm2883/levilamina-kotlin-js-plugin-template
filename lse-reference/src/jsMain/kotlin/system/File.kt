@@ -1,4 +1,6 @@
-open external class file
+// https://github.com/LiteLDev/LegacyScriptEngine/blob/c6258c5cfc8dc0f9b2f2b78868f33a7c95e6fc8d/src/legacy/api/FileSystemAPI.cpp
+
+open external class File
 /**
  * @param path 想要打开的文件路径
  * @param mode 文件的打开模式
@@ -124,6 +126,12 @@ open external class file
     ): Boolean
 
     /**
+     * 文件指针是否位于文件尾
+     * @return 文件指针是否处于文件尾
+     */
+    fun isEOF(): Boolean
+
+    /**
      * 移动文件指针
      * @param pos 文件指针要移动到的位置
      * @param isRelative 是否是相对当前文件指针位置移动
@@ -143,12 +151,6 @@ open external class file
      * @return 是否成功关闭
      */
     fun close(): Boolean
-
-    /**
-     * 文件指针是否位于文件尾
-     * @return 文件指针是否处于文件尾
-     */
-    fun isEOF(): Boolean
 
     /**
      * 刷新文件缓冲区
@@ -273,7 +275,7 @@ open external class file
          * @return 文件夹名数组
          */
         fun getFilesList(dir: String): Array<String>
+
+        // 向下兼容就不写了
     }
 }
-
-external class File : file

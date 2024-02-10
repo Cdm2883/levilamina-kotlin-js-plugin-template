@@ -1,6 +1,6 @@
 // https://github.com/LiteLDev/LegacyScriptEngine/blob/d700ce3a2dd20e84c986f19ab18925ff2d7d7b0a/src/legacy/api/NativePointer.cpp#L12
 
-external class NativePointer {
+external class NativePointer(nullptr: Nothing) {
     /**
      * 指针地址
      * @return 以数字形式表示的指针所指地址

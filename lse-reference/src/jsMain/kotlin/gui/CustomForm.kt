@@ -2,7 +2,7 @@
  * 自定义表单构建器
  * @see <a href="https://lse.liteldev.com/zh/apis/GuiAPI/FormBuilder/#api_1">📰 自定义表单构建器 API</a>
  */
-open external class LLSE_CustomForm {
+open external class LLSE_CustomForm(nullptr: Nothing) {
     /**
      * 设置表单的标题
      * @param title 表单的标题
