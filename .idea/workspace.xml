@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="修正 mc.kt 包引用">
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="placeholder :(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Block.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Block.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/BlockEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/BlockEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Command.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Container.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Container.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Item.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/ScoreBoard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/ScoreBoard.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +350,7 @@
       <workItem from="1707577471467" duration="330000" />
       <workItem from="1707577821651" duration="18000" />
       <workItem from="1707615864125" duration="13655000" />
-      <workItem from="1707653509120" duration="1310000" />
+      <workItem from="1707653509120" duration="4574000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -404,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707636791983</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="placeholder :(">
+      <option name="closed" value="true" />
+      <created>1707654992254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707654992255</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +434,7 @@
     <MESSAGE value="增加GlobalPointer和Packet的定义" />
     <MESSAGE value="完成Particle相关定义, 增加KDoc :/" />
     <MESSAGE value="修正 mc.kt 包引用" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正 mc.kt 包引用" />
+    <MESSAGE value="placeholder :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="placeholder :(" />
   </component>
 </project>

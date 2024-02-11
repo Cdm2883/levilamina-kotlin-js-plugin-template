@@ -76,6 +76,93 @@ external class mc {
         ): ParticleSpawner
         // endregion
 
+        // region https://lse.liteldev.com/zh/apis/GameAPI/ScoreBoard/
+        /**
+         * 创建一个新的计分项
+         * @param name 计分项名称
+         * @param displayName 计分项显示名称
+         * @return 新增创建的计分项对象. 如果返回Null, 则代表创建失败
+         */
+        fun newScoreObjective(name: String, displayName: String): Objective?
+
+        /**
+         * 获取某个已存在的计分项
+         * @param name 要获取的计分项名称
+         * @return 对应的计分项对象. 如果返回Null, 则代表计分项不存在
+         */
+        fun getScoreObjective(name: String): Objective?
+
+        /**
+         * 获取所有计分项 (此接口的作用类似命令 `/scoreboard objectives list`)
+         * @return 计分板系统记录的所有计分项对象
+         */
+        fun getAllScoreObjectives(): Array<Objective>
+
+        /**
+         * 获取某个处于显示状态的计分项
+         * @param slot 待查询的显示槽位名称. 可以为 sidebar/belowname/list
+         * @return 如果返回Null, 则代表对应槽位未显示计分项
+         */
+        fun getDisplayObjective(slot: String): Objective?
+
+        /**
+         * 获取玩家计分项的分数 (可查询离线玩家计分板)
+         * @param uuid 玩家的UUID
+         * @param name 计分项名称
+         * @return 计分板上的数值
+         */
+        fun getPlayerScore(uuid: String, name: String): Int
+
+        /**
+         * 设置玩家计分项的分数 (可修改离线玩家计分板)
+         * @param uuid 玩家的UUID
+         * @param name 计分项名称
+         * @param value 要设置的数值
+         * @return 是否设置成功
+         */
+        fun setPlayerScore(uuid: String, name: String, value: Int): Boolean
+
+        /**
+         * 增加玩家计分项的分数 (可修改离线玩家计分板)
+         * @param uuid 玩家的UUID
+         * @param name 计分项名称
+         * @param value 要增加的数值
+         * @return 是否设置成功
+         */
+        fun addPlayerScore(uuid: String, name: String, value: Int): Boolean
+
+        /**
+         * 减少玩家计分项的分数 (可修改离线玩家计分板)
+         * @param uuid 玩家的UUID
+         * @param name 计分项名称
+         * @param value 要减少的数值
+         * @return 是否设置成功
+         */
+        fun reducePlayerScore(uuid: String, name: String, value: Int): Boolean
+
+        /**
+         * 移除玩家计分项的分数 (可修改离线玩家计分板)
+         * @param uuid 玩家的UUID
+         * @param name 计分项名称
+         * @return 是否设置成功
+         */
+        fun deletePlayerScore(uuid: String, name: String): Boolean
+
+        /**
+         * 移除一个已存在的计分项
+         * @param name 计分项名称
+         * @return 是否移除成功
+         */
+        fun removeScoreObjective(name: String): Boolean
+
+        /**
+         * 使计分项停止显示
+         * @param slot 显示槽位名称字符串. 可以为 sidebar/belowname/list
+         * @return 是否清除成功
+         */
+        fun clearDisplayObjective(slot: String): Boolean
+        // endregion
+
         // region https://lse.liteldev.com/zh/apis/GameAPI/Server/
         /**
          * 获取BDS服务端版本号
