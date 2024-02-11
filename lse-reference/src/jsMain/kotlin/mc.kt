@@ -1,3 +1,5 @@
+import game.ParticleSpawner
+
 external class mc {
     companion object {
         // region https://lse.liteldev.com/zh/apis/EventAPI/Listen/
@@ -62,6 +64,20 @@ external class mc {
         ): Boolean
         // endregion
 
+        // region https://lse.liteldev.com/zh/apis/GameAPI/Particle/
+        /**
+         * 生成一个粒子生成器对象
+         * @param displayRadius 粒子显示半径. 默认值 `4294967295`
+         * @param highDetial 需要高细节线条. 默认值 `true`
+         * @param doubleSide 需要双面粒子. 默认值 `true`
+         */
+        fun newParticleSpawner(
+            displayRadius: Int = definedExternally,
+            highDetial: Boolean = definedExternally,
+            doubleSide: Boolean = definedExternally
+        ): ParticleSpawner
+        // endregion
+
         // region https://lse.liteldev.com/zh/apis/GameAPI/Server/
         /**
          * 获取BDS服务端版本号
@@ -115,9 +131,9 @@ external class mc {
          * @return 是否设置成功
          */
         fun setWeather(WeatherID: Int): Boolean
-        // endregion
 
         // region https://lse.liteldev.com/zh/apis/GameAPI/Player/
+        // endregion
         /**
          * 从现有玩家获取
          * @param info 玩家的名字或者Xuid

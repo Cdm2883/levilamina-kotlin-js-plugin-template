@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="增加GlobalPointer和Packet的定义" />
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="增加GlobalPointer和Packet的定义">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-ktx/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/lse-ktx/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Particle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Particle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,30 +82,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template" />
@@ -112,7 +119,7 @@
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [clean]">
+  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [dokkaHtml]">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,7 +219,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="levilamina-kotlin-js-plugin-template [jsMainClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="levilamina-kotlin-js-plugin-template [dokkaHtml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -223,51 +230,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jsMainClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="levilamina-kotlin-js-plugin-template [jsRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jsRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="levilamina-kotlin-js-plugin-template:plugin [buildLseJs]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/plugin" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildLseJs" />
+            <option value="dokkaHtml" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -357,11 +320,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [dokkaHtml]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [build]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [build]" />
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [buildLseJs]" />
       </list>
     </recent_temporary>
   </component>
@@ -388,6 +351,7 @@
       <workItem from="1707542509685" duration="6931000" />
       <workItem from="1707577471467" duration="330000" />
       <workItem from="1707577821651" duration="18000" />
+      <workItem from="1707615864125" duration="6483000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

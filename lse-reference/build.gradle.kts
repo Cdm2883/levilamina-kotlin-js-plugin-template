@@ -1,5 +1,6 @@
 plugins {
-    kotlin("multiplatform") version "1.9.22"
+    kotlin("multiplatform")
+    id("org.jetbrains.dokka")
 }
 
 group = "vip.cdms"
@@ -19,5 +20,3 @@ kotlin {
         val jsMain by getting
     }
 }
-
-// HelperLib真的好多错误...
