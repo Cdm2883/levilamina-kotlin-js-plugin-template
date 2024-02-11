@@ -1,5 +1,3 @@
-import game.ParticleSpawner
-
 external class mc {
     companion object {
         // region https://lse.liteldev.com/zh/apis/EventAPI/Listen/
