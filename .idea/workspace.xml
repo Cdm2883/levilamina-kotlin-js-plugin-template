@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="placeholder :(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/ScoreBoard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/ScoreBoard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,6 +348,8 @@
       <workItem from="1707577821651" duration="18000" />
       <workItem from="1707615864125" duration="13655000" />
       <workItem from="1707653509120" duration="4574000" />
+      <workItem from="1707713572341" duration="66000" />
+      <workItem from="1707713667089" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

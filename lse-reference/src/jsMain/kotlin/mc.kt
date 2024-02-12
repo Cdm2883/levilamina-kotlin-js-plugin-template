@@ -76,6 +76,138 @@ external class mc {
         ): ParticleSpawner
         // endregion
 
+        // region https://lse.liteldev.com/zh/apis/GameAPI/Player/
+        /**
+         * 从现有玩家获取
+         * @param info 玩家的名字或者Xuid
+         * @return 生成的玩家对象
+         */
+        fun getPlayer(info: String): Player
+
+        /**
+         * 获取所有在线玩家
+         * @return 玩家对象的数组
+         */
+        fun getOnlinePlayers(): Array<Player>
+
+        /**
+         * 广播一个文本消息给所有玩家
+         * @param msg 待发送的文本
+         * @param type 发送的文本消息类型, 默认为0: 0 普通消息(Raw), 1聊天消息(Chat), 5 物品栏上方的消息(Tip), 9 JSON格式消息(JSON)
+         * @return 是否成功发送
+         */
+        fun broadcast(msg: String, type: Int = definedExternally): Boolean
+
+        /**
+         * 修改玩家的重生坐标
+         * @param pos 重生坐标
+         * @return 是否成功修改
+         */
+        fun setRespawnPosition(pos: IntPos): Boolean
+        /**
+         * 修改玩家的重生坐标
+         * @param x x 坐标
+         * @param y y 坐标
+         * @param z z 坐标
+         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
+         * @return Boolean 是否成功修改
+         */
+        fun setRespawnPosition(
+            x: Int,
+            y: Int,
+            z: Int,
+            dimid: Int
+        ): Boolean
+
+        /**
+         * 获取玩家对应的NBT对象 (可获取离线玩家的NBT)
+         * @param uuid 玩家的UUID
+         * @return 玩家的NBT对象
+         */
+        fun getPlayerNbt(uuid: String): NbtCompound
+
+        /**
+         * 写入玩家对应的NBT对象 (可操作离线玩家的NBT)
+         * @param uuid 玩家的UUID
+         * @param nbt NBT对象
+         * @return 是否成功写入
+         */
+        fun setPlayerNbt(uuid: String, nbt: NbtCompound): Boolean
+
+        /**
+         * 覆盖玩家对应的NBT对象的特定NbtTag
+         * @param uuid 玩家的UUID
+         * @param nbt NBT对象
+         * @param tags 需要覆盖的NbtTag
+         * @return 是否成功覆盖对应的Tag
+         */
+        fun setPlayerNbtTags(
+            uuid: String,
+            nbt: NbtCompound,
+            tags: Array<String>
+        ): Boolean
+
+        /**
+         * 从存档中删除玩家对应的NBT对象的全部内容
+         * @param uuid 玩家的UUID
+         * @return 是否删除成功
+         */
+        fun deletePlayerNbt(uuid: String): Boolean
+
+        /**
+         * 创建一个模拟玩家
+         * @param name 模拟玩家名
+         * @param pos 生成生物的位置的坐标对象 (或者使用x, y, z, dimid来确定生成位置)
+         * @return 模拟玩家对象 (为 Null 则表示生成失败)
+         */
+        fun spawnSimulatedPlayer(
+            name: String,
+            pos: IntPos
+        ): Player?
+        /**
+         * 创建一个模拟玩家
+         * @param name 模拟玩家名
+         * @param pos 生成生物的位置的坐标对象 (或者使用x, y, z, dimid来确定生成位置)
+         * @return 模拟玩家对象 (为 Null 则表示生成失败)
+         */
+        fun spawnSimulatedPlayer(
+            name: String,
+            pos: FloatPos
+        ): Player?
+        /**
+         * 创建一个模拟玩家
+         * @param name 模拟玩家名
+         * @param x x 坐标
+         * @param y y 坐标
+         * @param z z 坐标
+         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
+         * @return 模拟玩家对象 (为 Null 则表示生成失败)
+         */
+        fun spawnSimulatedPlayer(
+            name: String,
+            x: Int,
+            y: Int,
+            z: Int,
+            dimid: Int
+        ): Player?
+        /**
+         * 创建一个模拟玩家
+         * @param name 模拟玩家名
+         * @param x x 坐标
+         * @param y y 坐标
+         * @param z z 坐标
+         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
+         * @return 模拟玩家对象 (为 Null 则表示生成失败)
+         */
+        fun spawnSimulatedPlayer(
+            name: String,
+            x: Float,
+            y: Float,
+            z: Float,
+            dimid: Int
+        ): Player?
+        // endregion
+
         // region https://lse.liteldev.com/zh/apis/GameAPI/ScoreBoard/
         /**
          * 创建一个新的计分项
@@ -216,138 +348,6 @@ external class mc {
          * @return 是否设置成功
          */
         fun setWeather(WeatherID: Int): Boolean
-
-        // region https://lse.liteldev.com/zh/apis/GameAPI/Player/
-        // endregion
-        /**
-         * 从现有玩家获取
-         * @param info 玩家的名字或者Xuid
-         * @return 生成的玩家对象
-         */
-        fun getPlayer(info: String): Player
-
-        /**
-         * 获取所有在线玩家
-         * @return 玩家对象的数组
-         */
-        fun getOnlinePlayers(): Array<Player>
-        
-        /**
-         * 广播一个文本消息给所有玩家
-         * @param msg 待发送的文本
-         * @param type 发送的文本消息类型, 默认为0: 0 普通消息(Raw), 1聊天消息(Chat), 5 物品栏上方的消息(Tip), 9 JSON格式消息(JSON)
-         * @return 是否成功发送
-         */
-        fun broadcast(msg: String, type: Int = definedExternally): Boolean
-
-        /**
-         * 修改玩家的重生坐标
-         * @param pos 重生坐标
-         * @return 是否成功修改
-         */
-        fun setRespawnPosition(pos: IntPos): Boolean
-        /**
-         * 修改玩家的重生坐标
-         * @param x x 坐标
-         * @param y y 坐标
-         * @param z z 坐标
-         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
-         * @return Boolean 是否成功修改
-         */
-        fun setRespawnPosition(
-            x: Int,
-            y: Int,
-            z: Int,
-            dimid: Int
-        ): Boolean
-
-        /**
-         * 获取玩家对应的NBT对象 (可获取离线玩家的NBT)
-         * @param uuid 玩家的UUID
-         * @return 玩家的NBT对象
-         */
-        fun getPlayerNbt(uuid: String): NbtCompound
-
-        /**
-         * 写入玩家对应的NBT对象 (可操作离线玩家的NBT)
-         * @param uuid 玩家的UUID
-         * @param nbt NBT对象
-         * @return 是否成功写入
-         */
-        fun setPlayerNbt(uuid: String, nbt: NbtCompound): Boolean
-
-        /**
-         * 覆盖玩家对应的NBT对象的特定NbtTag
-         * @param uuid 玩家的UUID
-         * @param nbt NBT对象
-         * @param tags 需要覆盖的NbtTag
-         * @return 是否成功覆盖对应的Tag
-         */
-        fun setPlayerNbtTags(
-            uuid: String,
-            nbt: NbtCompound,
-            tags: Array<String>
-        ): Boolean
-
-        /**
-         * 从存档中删除玩家对应的NBT对象的全部内容
-         * @param uuid 玩家的UUID
-         * @return 是否删除成功
-         */
-        fun deletePlayerNbt(uuid: String): Boolean
-
-        /**
-         * 创建一个模拟玩家
-         * @param name 模拟玩家名
-         * @param pos 生成生物的位置的坐标对象 (或者使用x, y, z, dimid来确定生成位置)
-         * @return 模拟玩家对象 (为 Null 则表示生成失败)
-         */
-        fun spawnSimulatedPlayer(
-            name: String,
-            pos: IntPos
-        ): Player?
-        /**
-         * 创建一个模拟玩家
-         * @param name 模拟玩家名
-         * @param pos 生成生物的位置的坐标对象 (或者使用x, y, z, dimid来确定生成位置)
-         * @return 模拟玩家对象 (为 Null 则表示生成失败)
-         */
-        fun spawnSimulatedPlayer(
-            name: String,
-            pos: FloatPos
-        ): Player?
-        /**
-         * 创建一个模拟玩家
-         * @param name 模拟玩家名
-         * @param x x 坐标
-         * @param y y 坐标
-         * @param z z 坐标
-         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
-         * @return 模拟玩家对象 (为 Null 则表示生成失败)
-         */
-        fun spawnSimulatedPlayer(
-            name: String,
-            x: Int,
-            y: Int,
-            z: Int,
-            dimid: Int
-        ): Player?
-        /**
-         * 创建一个模拟玩家
-         * @param name 模拟玩家名
-         * @param x x 坐标
-         * @param y y 坐标
-         * @param z z 坐标
-         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
-         * @return 模拟玩家对象 (为 Null 则表示生成失败)
-         */
-        fun spawnSimulatedPlayer(
-            name: String,
-            x: Float,
-            y: Float,
-            z: Float,
-            dimid: Int
-        ): Player?
         // endregion
 
         // region https://lse.liteldev.com/zh/apis/GuiAPI/FormBuilder/
