@@ -74,8 +74,25 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun isOP(): Boolean
 
-    // .instanceFunction("setPermLevel", &PlayerClass::setPermLevel)
-    // .instanceFunction("setGameMode", &PlayerClass::setGameMode)
+    /**
+     * 修改玩家操作权限
+     *
+     * | 操作权限等级 | 对应操作权限     |
+     * | --------- | -------------- |
+     * | 0         | 普通成员权限      |
+     * | 1         | OP权限          |
+     * | 4         | OP + 控制台权限  |
+     * @param level 目标操作权限等级
+     * @return 是否成功修改
+     */
+    fun setPermLevel(level: Int): Boolean
+
+    /**
+     * 修改玩家游戏模式
+     * @param mode 目标游戏模式. 0生存模式, 1创造模式, 2冒险模式, 3观察者模式
+     * @return 是否成功修改
+     */
+    fun setGameMode(mode: Int): Boolean
 
     // -
     /**
@@ -300,9 +317,31 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun setHungry(hunger: Int): Boolean
 
-    // .instanceFunction("refreshChunks", &PlayerClass::refreshChunks)
-    // .instanceFunction("giveItem", &PlayerClass::giveItem)
-    // .instanceFunction("clearItem", &PlayerClass::clearItem)
+    /**
+     * 刷新玩家加载的所有区块
+     * @return 是否成功刷新
+     */
+    fun refreshChunks(): Boolean
+
+    /**
+     * 给予玩家一个物品
+     * @param item 给予的物品对象
+     * @param amount 给予物品对象的数量, 若提供此参数则物品对象自身的Count属性将被忽略
+     * @return 是否成功给予
+     */
+    fun giveItem(item: Item, amount: Int = definedExternally): Boolean
+
+    /**
+     * 清除玩家背包中所有指定类型的物品
+     *
+     * 将玩家物品栏, 主手, 副手, 盔甲栏中所有物品的type属性与此字符串进行比较.
+     * 如果相等, 则清除此物品
+     * @param type 要清除的物品对象类型名
+     * @param count 要清除的物品数量
+     * @return 清除的物品个数
+     */
+    fun clearItem(type: String, count: Int = definedExternally): Int
+
     // .instanceFunction("isSprinting", &PlayerClass::isSprinting)
     // .instanceFunction("setSprinting", &PlayerClass::setSprinting)
 
@@ -386,9 +425,33 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun getEnderChest(): Container
 
-    // .instanceFunction("getRespawnPosition", &PlayerClass::getRespawnPosition)
-    // .instanceFunction("setRespawnPosition", &PlayerClass::setRespawnPosition)
-    // .instanceFunction("refreshItems", &PlayerClass::refreshItems)
+    /**
+     * 获取玩家的重生坐标
+     * @return 重生点坐标
+     */
+    fun getRespawnPosition(): IntPos
+
+    /**
+     * 修改玩家的重生坐标
+     * @param pos 重生坐标
+     * @return 是否成功修改
+     */
+    fun setRespawnPosition(pos: IntPos): Boolean
+    /**
+     * 修改玩家的重生坐标
+     * @param x x 坐标
+     * @param y y 坐标
+     * @param z z 坐标
+     * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
+     * @return 是否成功修改
+     */
+    fun setRespawnPosition(x: Int, y: Int, z: Int, dimid: Int): Boolean
+
+    /**
+     * 刷新玩家物品栏、盔甲栏
+     * @return 是否成功刷新
+     */
+    fun refreshItems(): Boolean
 
     // -
     // .instanceFunction("getScore", &PlayerClass::getScore)
@@ -400,10 +463,33 @@ open external class LLSE_Player(nullptr: Nothing) {
     // .instanceFunction("removeSidebar", &PlayerClass::removeSidebar)
     // .instanceFunction("setBossBar", &PlayerClass::setBossBar)
     // .instanceFunction("removeBossBar", &PlayerClass::removeBossBar)
-    // .instanceFunction("addLevel", &PlayerClass::addLevel)
-    // .instanceFunction("reduceLevel", &PlayerClass::reduceLevel)
-    // .instanceFunction("getLevel", &PlayerClass::getLevel)
-    // .instanceFunction("setLevel", &PlayerClass::setLevel)
+
+    /**
+     * 提高玩家经验等级
+     * @param count 要提高的经验等级
+     * @return 是否设置成功
+     */
+    fun addLevel(count: Int): Boolean
+
+    /**
+     * 降低玩家经验等级
+     * @param count 要降低的经验等级
+     * @return 是否设置成功
+     */
+    fun reduceLevel(count: Int): Boolean
+
+    /**
+     * 获取玩家经验等级
+     * @return 玩家的经验等级
+     */
+    fun getLevel(): Int
+
+    /**
+     * 设置玩家经验等级
+     * @param count 要设置的经验等级
+     * @return 是否设置成功
+     */
+    fun setLevel(count: Int): Int
 
     /**
      * 缩放玩家
@@ -412,10 +498,21 @@ open external class LLSE_Player(nullptr: Nothing) {
      */
     fun setScale(scale: Int): Boolean
 
-    // .instanceFunction("resetLevel", &PlayerClass::resetLevel)
+    /**
+     * 重置玩家经验
+     * @return 是否设置成功
+     */
+    fun resetLevel(): Boolean
+
     // .instanceFunction("addExperience", &PlayerClass::addExperience)
     // .instanceFunction("reduceExperience", &PlayerClass::reduceExperience)
-    // .instanceFunction("getCurrentExperience", &PlayerClass::getCurrentExperience)
+
+    /**
+     * 获取玩家当前经验值
+     * @return 玩家当前经验值
+     */
+    fun getCurrentExperience(): Int
+
     // .instanceFunction("setCurrentExperience", &PlayerClass::setCurrentExperience)
     // .instanceFunction("getTotalExperience", &PlayerClass::getTotalExperience)
     // .instanceFunction("setTotalExperience", &PlayerClass::setTotalExperience)

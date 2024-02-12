@@ -23,6 +23,14 @@
 
 ## ✨ 特性
 - [ ] LSE接口完整定义
+  - [ ] DataAPI
+  - [x] EventAPI
+  - [ ] GameAPI
+  - [x] GuiAPI
+  - [ ] NativeAPI
+  - [x] NbtAPI
+  - [x] ScriptAPI
+  - [x] SystemAPI
 - [ ] 命令注册的DSL
 - [ ] 表单UI的DSL
 - [ ] NBT操作的DSL
