@@ -49,7 +49,7 @@ open external class LLSE_CustomForm(nullptr: Nothing) {
     fun addDropdown(
         title: String,
         items: Array<String>,
-        default: Int
+        default: Int = definedExternally
     ): CustomForm
 
     /**
@@ -79,7 +79,7 @@ open external class LLSE_CustomForm(nullptr: Nothing) {
     fun addStepSlider(
         title: String,
         items: Array<String>,
-        default: Int
+        default: Int = definedExternally
     ): CustomForm
 }
 typealias CustomForm = LLSE_CustomForm

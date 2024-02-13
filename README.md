@@ -32,7 +32,7 @@
   - [x] ScriptAPI
   - [x] SystemAPI
 - [ ] 命令注册的DSL
-- [ ] 表单UI的DSL
+- [x] 表单UI的DSL
 - [ ] NBT操作的DSL
 
 ...

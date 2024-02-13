@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="placeholder :(">
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="增加 Player 的定义, 在README中加上定义完成进度">
+      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/CustomFormBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/ModalFormBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/SimpleFormBuilder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +119,7 @@
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template [dokkaHtml]">
+  <component name="RunManager" selected="Gradle.levilamina-kotlin-js-plugin-template:plugin [build]">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,28 +130,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="levilamina-kotlin-js-plugin-template [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="levilamina-kotlin-js-plugin-template [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -280,28 +263,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="levilamina-kotlin-js-plugin-template:plugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/plugin" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,11 +276,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [dokkaHtml]" />
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [clean]" />
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [build]" />
-        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [clean]" />
         <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template:plugin [build]" />
+        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [clean]" />
+        <item itemvalue="Gradle.levilamina-kotlin-js-plugin-template [dokkaHtml]" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +308,9 @@
       <workItem from="1707615864125" duration="13655000" />
       <workItem from="1707653509120" duration="4574000" />
       <workItem from="1707713572341" duration="66000" />
-      <workItem from="1707713667089" duration="782000" />
+      <workItem from="1707713667089" duration="26081000" />
+      <workItem from="1707748512019" duration="791000" />
+      <workItem from="1707795985841" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -407,7 +368,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707654992255</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修复 mc.kt 折叠结构">
+      <option name="closed" value="true" />
+      <created>1707714789465</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707714789465</updated>
+    </task>
+    <task id="LOCAL-00009" summary="增加 Player 的定义, 在README中加上定义完成进度">
+      <option name="closed" value="true" />
+      <created>1707719252241</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707719252241</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +411,8 @@
     <MESSAGE value="完成Particle相关定义, 增加KDoc :/" />
     <MESSAGE value="修正 mc.kt 包引用" />
     <MESSAGE value="placeholder :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="placeholder :(" />
+    <MESSAGE value="修复 mc.kt 折叠结构" />
+    <MESSAGE value="增加 Player 的定义, 在README中加上定义完成进度" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加 Player 的定义, 在README中加上定义完成进度" />
   </component>
 </project>

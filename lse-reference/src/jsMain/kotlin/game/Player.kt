@@ -528,9 +528,37 @@ open external class LLSE_Player(nullptr: Nothing) {
 
     // -
     // .instanceFunction("sendSimpleForm", &PlayerClass::sendSimpleForm)
-    // .instanceFunction("sendModalForm", &PlayerClass::sendModalForm)
+
+    /**
+     * 向玩家发送模式表单
+     * @param title 表单标题
+     * @param content 表单内容
+     * @param confirmButton 按钮1文本的字符串
+     * @param cancelButton 按钮2文本的字符串
+     * @param callback 玩家点击按钮之后被调用的回调函数 (玩家点击确定按钮为true, 取消按钮为false. 如果为Null, 则代表玩家取消了表单)
+     * @return 发送的表单ID
+     */
+    fun sendModalForm(
+        title: String,
+        content: String,
+        confirmButton: String,
+        cancelButton: String,
+        callback: (player: Player, result: Boolean?) -> Unit
+    ): Int?
+
     // .instanceFunction("sendCustomForm", &PlayerClass::sendCustomForm)
-    // .instanceFunction("sendForm", &PlayerClass::sendForm)
+
+    /**
+     * 发送表单
+     * @param fm 配置好的表单对象
+     * @param callback 玩家提交表单之后被调用的回调函数
+     * @return 发送的表单ID
+     * @see <a href="https://lse.liteldev.com/zh/apis/GuiAPI/FormBuilder/">📃 普通表单构建器 API</a>
+     */
+    fun sendForm(fm: SimpleForm, callback: dynamic): Int?
+    /** @see sendForm */
+    fun sendForm(fm: CustomForm, callback: dynamic): Int?
+
     // .instanceFunction("sendPacket", &PlayerClass::sendPacket)
 
     // -
