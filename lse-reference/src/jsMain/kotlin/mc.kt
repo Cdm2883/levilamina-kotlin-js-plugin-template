@@ -62,6 +62,47 @@ external class mc {
         ): Boolean
         // endregion
 
+        // region https://lse.liteldev.com/zh/apis/GameAPI/Command/
+        /**
+         * 执行一条后台命令
+         * @param cmd 待执行的命令
+         * @return 是否执行成功
+         */
+        fun runcmd(cmd: String): Boolean
+
+        /**
+         * 执行一条后台命令 (强化版)
+         * > runcmdEx 与普通 runcmd 实现区别非常大, 在于 Ex 版本拥有隐藏输出的机制, 执行结果不会输出至控制台, 因此如果有需要, 要手动用 log 函数将结果输出
+         *
+         * 对于返回的某个执行结果对象res, 有如下这些成员:
+         *
+         * | 成员         | 含义                 | 类型       |
+         * | ----------- | ------------------- | --------- |
+         * | res.success | 是否执行成功          | `Boolean` |
+         * | res.output  | BDS执行命令后的输出结果 | `String`  |
+         * @param cmd 待执行的命令
+         * @return 命令执行结果
+         */
+        fun runcmdEx(cmd: String): dynamic
+
+        /**
+         * 注册一条顶层命令
+         * @param cmd 待注册的命令
+         * @param description 命令描述文本
+         * @param permission 指令执行所需权限 (默认 `PermType.GameMasters`只有OP可以执行这条指令)
+         * @param flag 默认值 0x80
+         * @param alias 命令的别名 (可以为命令设置多个别名, 执行的时候相当于触发同一条命令)
+         * @return 指令对象
+         */
+        fun newCommand(
+            cmd: String,
+            description: String,
+            permission: PermType = definedExternally,
+            flag: Int = definedExternally,
+            alias: String = definedExternally
+        ): Command
+        // endregion
+
         // region https://lse.liteldev.com/zh/apis/GameAPI/Particle/
         /**
          * 生成一个粒子生成器对象
@@ -97,27 +138,6 @@ external class mc {
          * @return 是否成功发送
          */
         fun broadcast(msg: String, type: Int = definedExternally): Boolean
-
-        /**
-         * 修改玩家的重生坐标
-         * @param pos 重生坐标
-         * @return 是否成功修改
-         */
-        fun setRespawnPosition(pos: IntPos): Boolean
-        /**
-         * 修改玩家的重生坐标
-         * @param x x 坐标
-         * @param y y 坐标
-         * @param z z 坐标
-         * @param dimid 维度ID: 0 代表主世界, 1 代表下界, 2 代表末地
-         * @return Boolean 是否成功修改
-         */
-        fun setRespawnPosition(
-            x: Int,
-            y: Int,
-            z: Int,
-            dimid: Int
-        ): Boolean
 
         /**
          * 获取玩家对应的NBT对象 (可获取离线玩家的NBT)

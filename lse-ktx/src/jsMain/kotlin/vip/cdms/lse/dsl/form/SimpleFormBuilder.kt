@@ -54,6 +54,13 @@ class SimpleFormBuilder : ArrayList<SimpleFormBuilder.Button>(), FormBuilder {
             builder.callback(this)
             builder send this
         }
+    fun custom(text: String, image: String? = undefined, callback: CustomFormBuilder.(Player) -> Unit) =
+        button(text, image) {
+            val builder = CustomFormBuilder()
+            builder.title = title
+            builder.callback(this)
+            builder send this
+        }
 
     @Suppress("DuplicatedCode")
     operator fun plus(builder: SimpleFormBuilder): SimpleFormBuilder {

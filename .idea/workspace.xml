@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="增加 Player 的定义, 在README中加上定义完成进度">
-      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/CustomFormBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/ModalFormBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/SimpleFormBuilder.kt" afterDir="false" />
+    <list default="true" id="53b30590-d405-402f-8428-5e8b733c8ed0" name="更改" comment="更加完善表单的定义, 新增表单UI的DSL">
+      <change afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/command/MCCommandHelper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/gui/CustomForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/form/SimpleFormBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-ktx/src/jsMain/kotlin/vip/cdms/lse/dsl/form/SimpleFormBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Command.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/game/Command.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" beforeDir="false" afterPath="$PROJECT_DIR$/lse-reference/src/jsMain/kotlin/mc.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/jsMain/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,38 +82,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Users/Cdm2883/Desktop/levilamina-kotlin-js-plugin-template/do-not-commit",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "D:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\do-not-commit" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\lse-reference\src\jsMain\kotlin\game" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\test" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\lse-reference\src\jsMain\kotlin\SystemAPI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\lse-ktx\src\jsMain\kotlin\vip\cdms\lse\dsl\form" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin\src\jsMain" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin\src" />
       <recent name="D:\Users\Cdm2883\Desktop\levilamina-kotlin-js-plugin-template\plugin" />
@@ -310,7 +312,15 @@
       <workItem from="1707713572341" duration="66000" />
       <workItem from="1707713667089" duration="26081000" />
       <workItem from="1707748512019" duration="791000" />
-      <workItem from="1707795985841" duration="2881000" />
+      <workItem from="1707795985841" duration="7125000" />
+      <workItem from="1707830361290" duration="4845000" />
+      <workItem from="1707881402586" duration="16045000" />
+      <workItem from="1707974018162" duration="6108000" />
+      <workItem from="1707997487370" duration="3215000" />
+      <workItem from="1708093804874" duration="1000" />
+      <workItem from="1708097412150" duration="4000" />
+      <workItem from="1708340486712" duration="1765000" />
+      <workItem from="1708662519793" duration="4969000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -384,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707719252241</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更加完善表单的定义, 新增表单UI的DSL">
+      <option name="closed" value="true" />
+      <created>1707801916872</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707801916873</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +431,7 @@
     <MESSAGE value="placeholder :(" />
     <MESSAGE value="修复 mc.kt 折叠结构" />
     <MESSAGE value="增加 Player 的定义, 在README中加上定义完成进度" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加 Player 的定义, 在README中加上定义完成进度" />
+    <MESSAGE value="更加完善表单的定义, 新增表单UI的DSL" />
+    <option name="LAST_COMMIT_MESSAGE" value="更加完善表单的定义, 新增表单UI的DSL" />
   </component>
 </project>
